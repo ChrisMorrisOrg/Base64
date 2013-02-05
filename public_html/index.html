@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+    <!--
+  
+    Base64
+
+    Generate base64 data URL's for images and other files.
+    Source: https://github.com/ChrisMorrisOrg/Base64
+
+    Created by Chris Morris, 2013
+    http://chrismorris.org
+    @ChrisMorrisOrg
+
+    This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License.
+    To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.
+
+    -->
+
+    <head>
+        <title>Convert Images to Base64 Data URL for CSS &raquo; base64.ChrisMorris.org</title>
+        <link rel="stylesheet" href="css/style.css">
+
+        <meta name="description" content="An open-source, free online utility to generate image data URL's for CSS. No uploading required!" />
+
+        <meta property="og:title" content="Convert Images to Base64 Data URL for CSS &raquo; base64.ChrisMorris.org" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="http://chrismorris.org/img/display_picture.jpg" />
+        <meta property="og:site_name" content="base64.ChrisMorris.org" />
+
+        <link rel="icon" href="http://chrismorris.org/favicon.ico" type="image/x-icon">
+    </head>
+
+    <body>
+        <script type="text/javascript">
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-36771574-3']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+        </script>
+
+        <header>
+            <div id="banner" class="clearfix">
+                <a href="http://chrismorris.org/projects/">&larr; Back to ChrisMorris.org</a>
+                <h1>Base64</h1>
+            </div>
+        </header>
+
+        <section id="stage">
+            <div id="panel">
+                <label for="fileInput">Select Image:</label>
+                <input id="fileInput" type="file" />
+                <div id="url"></div>
+            </div>
+        </section>
+    </body>
+
+    <script src="js/base64.js"></script>
+
+</html>

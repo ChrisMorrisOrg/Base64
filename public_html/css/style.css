@@ -1,0 +1,135 @@
+/*
+
+  style.css
+  ------
+  Source: https://github.com/ChrisMorrisOrg/Base64
+ 
+  Copyright 2013 Chris Morris, all rights reserved.
+  http://chrismorris.org
+  chris@chrismorris.org
+  Twitter: @ChrisMorrisOrg
+
+*/
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    font-family: Arial;
+    background: #ccc;
+    color: #fff;
+    overflow: hidden;
+    font-size: 1em;
+}
+
+
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+
+header {
+    width: 100%;
+    max-height: 4em;
+    padding: 0.5em 0;
+    background: url('http://chrismorris.org/img/bg-purple.gif') fixed top center;
+    box-shadow: #000 0em 0em 1.625em;
+}
+
+#banner {
+    background: rgba(144, 0, 255, 0.4);
+    display: block;
+    max-height: 4em;
+    overflow: hidden;
+    cursor: default;
+}
+
+#banner h1{
+    color: #fff;
+    font-size: 1.34em;
+    padding: 0.175em 0.42em;
+    margin: 0;
+    display: block;
+}
+
+#banner a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.34em;
+    padding: 0.175em 0.42em;
+    margin: 0 0 0.175em 0;
+    cursor: pointer;
+    display: block;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+}
+
+#banner a:hover {
+    background:#9000ff;
+}
+
+#stage {
+    width: 100%;
+}
+
+#panel {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2.5em;
+    width: auto;
+    text-shadow: #000 0 0 0.5em;
+}
+
+#url {
+    box-shadow: rgba(0, 0, 0, 0.5) 0 0 1em inset;
+    background: rgba(0, 0, 0, 0.5);
+    margin: 2em 0 0 0;
+    padding: 0.625em;
+    display: block;
+    max-width: 100%;
+    max-height: 10em;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    word-wrap: break-word;
+    border-radius: 0.625em;
+    font-size: 0.875em;
+    outline: none;
+}
+
+
+
+
+@media only screen and (min-width: 48em){
+    #banner h1{
+        float: right;
+        text-align: right;
+    }
+
+    #banner a{
+        float: left;
+    }
+}
+
+
+@media only screen and (min-width: 48em) and (min-height: 30em){
+    #panel {
+        position: absolute;
+        bottom: 10%;
+        right: 10%;
+        border-radius: 1.25em;
+        width: 34em;
+    }
+}
