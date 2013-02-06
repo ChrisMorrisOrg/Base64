@@ -48,6 +48,8 @@ header {
     padding: 0.5em 0;
     background: url('http://chrismorris.org/img/bg-purple.gif') fixed top center;
     box-shadow: #000 0em 0em 1.625em;
+    -webkit-box-shadow: #000 0em 0em 1.625em;
+    -moz-box-shadow: #000 0em 0em 1.625em;
 }
 
 #banner {
@@ -76,6 +78,8 @@ header {
     display: block;
     transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
 }
 
 #banner a:hover {
@@ -102,9 +106,11 @@ header {
     max-width: 100%;
     max-height: 10em;
     overflow-x: hidden;
-    overflow-y: scroll;
+    overflow-y: auto;
     word-wrap: break-word;
     border-radius: 0.625em;
+    -webkit-border-radius: 0.625em;
+    -moz-border-radius: 0.625em;
     font-size: 0.875em;
     outline: none;
 }
@@ -130,6 +136,8 @@ header {
         bottom: 10%;
         right: 10%;
         border-radius: 1.25em;
+        -webkit-border-radius: 1.25em;
+        -moz-border-radius: 1.25em;
         width: 34em;
     }
 }
